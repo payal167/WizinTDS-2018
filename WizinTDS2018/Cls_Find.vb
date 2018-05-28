@@ -32,7 +32,7 @@ Public Class Cls_Find
                 gid = rsfind.Tables(0).Rows(0)(1).ToString()
                 gdesc = rsfind.Tables(0).Rows(0)(0).ToString()
             End If
-
+            'endif
             For i = 0 To rsfind.Tables(0).Rows.Count - 1
                 lst = .Items.Add(rsfind.Tables(0).Rows(i)(0).ToString())
                 lst.SubItems.Add(rsfind.Tables(0).Rows(i)(1))
